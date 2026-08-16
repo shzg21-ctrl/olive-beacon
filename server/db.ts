@@ -1,7 +1,8 @@
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, leads, quoteRequests, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
+import type { LeadSubmissionInput } from "./leadSchemas";
 
 let _db: ReturnType<typeof drizzle> | null = null;
 
@@ -89,4 +90,52 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+const normaliseOptional = (value?: string) => value?.trim() || null;
+
+/** Saves a public enquiry and creates a quote-request record for future commercial workflows. */
+export async function createLeadSubmission(input: LeadSubmissionInput): Promise<{ id: number }> {
+  const db = await getDb();
+  if (!db) {
+    throw new Error("Database is not available");
+  }
+
+  const result = await db.insert(leads).values({
+    submissionType: input.submissionType,
+    businessName: normaliseOptional(input.businessName),
+    businessType: normaliseOptional(input.businessType),
+    contactName: input.contactName.trim(),
+    email: input.email.trim().toLowerCase(),
+    phone: normaliseOptional(input.phone),
+    town: normaliseOptional(input.town),
+    postcode: normaliseOptional(input.postcode),
+    websiteUrl: normaliseOptional(input.websiteUrl),
+    serviceInterests: input.services,
+    productQuantity: normaliseOptional(input.productQuantity),
+    locationCount: normaliseOptional(input.locationCount),
+    installationRequired: normaliseOptional(input.installationRequired),
+    currentReviewPlatform: normaliseOptional(input.currentReviewPlatform),
+    preferredReviewDestination: normaliseOptional(input.preferredReviewDestination),
+    contactPreference: input.contactPreference ?? null,
+    subject: normaliseOptional(input.subject),
+    message: input.message.trim(),
+    websiteDetails: input.websiteDetails ?? null,
+    sourcePage: input.sourcePage,
+  });
+
+  const leadId = Number(result[0]?.insertId);
+  if (!Number.isInteger(leadId) || leadId < 1) {
+    throw new Error("Lead ID was not returned after insertion");
+  }
+
+  if (input.submissionType === "quote") {
+    await db.insert(quoteRequests).values({
+      leadId,
+      serviceInterests: input.services,
+      productQuantity: normaliseOptional(input.productQuantity),
+      requirements: input.message.trim(),
+      websiteDetails: input.websiteDetails ?? null,
+    });
+  }
+
+  return { id: leadId };
+}
