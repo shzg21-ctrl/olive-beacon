@@ -11,4 +11,5 @@
 - [x] Add automated tests for lead validation and submission behaviour.
 - [x] Add automated coverage for rate limiting, honeypot handling, persistence failure, and notification failure handling.
 - [x] Verify desktop and mobile rendering, keyboard navigation, reduced-motion behaviour, and submission success/error states.
-- [ ] Create a final project checkpoint and deliver the completed website.
+- [x] Create a final project checkpoint and deliver the completed website.
+- [ ] Export the completed Olive Beacon project to a private GitHub repository and confirm the repository URL.
