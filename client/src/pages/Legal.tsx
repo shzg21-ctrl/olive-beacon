@@ -15,10 +15,10 @@ const legalContent = {
   cookies: {
     eyebrow: "COOKIES",
     title: "Clear choices. No dark patterns.",
-    intro: "Olive Beacon is designed to keep optional tracking restrained. This policy should be reviewed before launch if additional analytics, advertising, or integrations are enabled.",
+    intro: "Olive Beacon currently uses essential local storage to remember the cookie notice choice. This policy should be reviewed before launch if analytics, advertising, or additional integrations are enabled.",
     sections: [
       ["Essential storage", "The website may store a preference that records your cookie choice. This helps the site remember your selection and is not used for advertising."],
-      ["Analytics", "Optional analytics are not activated by the site’s consent interface until visitors choose to enable them. If analytics are introduced or changed, the exact provider and purpose should be documented here."],
+      ["Analytics", "Analytics are not active in the current website build. If analytics are introduced, the provider, purpose, and any consent requirements should be documented here before launch."],
       ["Marketing", "No marketing cookies or advertising pixels are enabled in the current website build."],
       ["Manage preferences", "You can clear your browser storage to remove your saved preferences. A preference control is also available in the site footer."],
     ],

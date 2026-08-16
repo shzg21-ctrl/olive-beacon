@@ -40,6 +40,11 @@ describe("lead submission validation", () => {
     expect(result.success).toBe(false);
   });
 
+  it("requires a business name for quote requests", () => {
+    const result = leadSubmissionSchema.safeParse({ ...validQuote, businessName: "" });
+    expect(result.success).toBe(false);
+  });
+
   it("includes key lead details in the owner alert", () => {
     const content = formatLeadNotification(validQuote);
     expect(content).toContain("Alex Morgan");

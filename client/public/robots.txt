@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /onboarding/
+Disallow: /client
 
-Sitemap: /sitemap.xml
+Sitemap: https://olivebeacon.com/sitemap.xml

@@ -61,6 +61,13 @@ export const leadSubmissionSchema = z
         message: "Select at least one service so we can tailor your quote.",
       });
     }
+    if (data.submissionType === "quote" && !data.businessName?.trim()) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ["businessName"],
+        message: "Please enter your business name so we can tailor your quote.",
+      });
+    }
     if (data.submissionType === "contact" && !data.subject?.trim()) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,

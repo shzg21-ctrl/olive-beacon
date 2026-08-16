@@ -15,6 +15,13 @@
       "when": 1786905858203,
       "tag": "0001_tired_paladin",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1786908516135,
+      "tag": "0002_pink_salo",
+      "breakpoints": true
     }
   ]
 }

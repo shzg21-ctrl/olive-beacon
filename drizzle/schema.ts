@@ -1,4 +1,4 @@
-import { int, json, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { boolean, int, json, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
 
 /**
  * Core user table backing auth flow.
@@ -132,6 +132,49 @@ export const websiteProjects = mysqlTable("websiteProjects", {
   targetDeadline: timestamp("targetDeadline"),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+/** Secure invitation records for private post-acceptance customer onboarding. Tokens are stored as hashes. */
+export const onboardingInvites = mysqlTable("onboardingInvites", {
+  id: int("id").autoincrement().primaryKey(),
+  tokenHash: varchar("tokenHash", { length: 128 }).notNull().unique(),
+  leadId: int("leadId"),
+  customerId: int("customerId"),
+  quoteRequestId: int("quoteRequestId"),
+  artworkApprovalId: int("artworkApprovalId"),
+  status: mysqlEnum("status", ["active", "completed", "revoked"]).default("active").notNull(),
+  expiresAt: timestamp("expiresAt"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+/** Structured details submitted by a customer from their secure onboarding link. */
+export const customerOnboardings = mysqlTable("customerOnboardings", {
+  id: int("id").autoincrement().primaryKey(),
+  inviteId: int("inviteId").notNull().unique(),
+  customerId: int("customerId"),
+  businessDetails: json("businessDetails").$type<Record<string, unknown>>().notNull(),
+  productDetails: json("productDetails").$type<Record<string, unknown>>().notNull(),
+  reviewDestination: json("reviewDestination").$type<Record<string, unknown>>().notNull(),
+  brandingDetails: json("brandingDetails").$type<Record<string, unknown>>().notNull(),
+  deliveryDetails: json("deliveryDetails").$type<Record<string, unknown>>().notNull(),
+  websiteProjectDetails: json("websiteProjectDetails").$type<Record<string, unknown>>().notNull(),
+  accurateConfirmed: boolean("accurateConfirmed").notNull(),
+  completedAt: timestamp("completedAt"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+/** Private metadata for customer-supplied project assets; file bytes remain in secured storage. */
+export const customerAssets = mysqlTable("customerAssets", {
+  id: int("id").autoincrement().primaryKey(),
+  onboardingId: int("onboardingId").notNull(),
+  category: varchar("category", { length: 64 }).notNull(),
+  originalName: varchar("originalName", { length: 160 }).notNull(),
+  storageKey: varchar("storageKey", { length: 1024 }).notNull(),
+  mimeType: varchar("mimeType", { length: 100 }).notNull(),
+  byteSize: int("byteSize").notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
 });
 
 export type Lead = typeof leads.$inferSelect;

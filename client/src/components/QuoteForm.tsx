@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { Check, ChevronDown, Loader2, Send } from "lucide-react";
 import { toast } from "sonner";
+import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 
 const services = [
@@ -61,8 +62,9 @@ function SelectField({ label, value, onChange, options, required = false }: { la
   );
 }
 
-export function QuoteForm() {
-  const [mode, setMode] = useState<FormMode>("quote");
+export function QuoteForm({ initialMode = "quote" }: { initialMode?: FormMode }) {
+  const [, setLocation] = useLocation();
+  const [mode, setMode] = useState<FormMode>(initialMode);
   const [form, setForm] = useState(initialForm);
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [selectedFeatures, setSelectedFeatures] = useState<string[]>([]);
@@ -85,6 +87,18 @@ export function QuoteForm() {
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const selected = mode === "contact" ? ["General enquiry"] : selectedServices;
+    if (!form.contactName.trim() || !form.email.trim() || !form.message.trim()) {
+      toast.error("Please add your name, email address, and enquiry details.");
+      return;
+    }
+    if (mode === "contact" && !form.subject.trim()) {
+      toast.error("Please add a subject for your message.");
+      return;
+    }
+    if (mode === "quote" && !form.businessName.trim()) {
+      toast.error("Please enter your business name so we can tailor your quote.");
+      return;
+    }
     if (mode === "quote" && selected.length === 0) {
       toast.error("Select at least one service so we can tailor your quote.");
       return;
@@ -122,7 +136,7 @@ export function QuoteForm() {
         sourcePage: typeof window !== "undefined" ? window.location.pathname : "/",
         honeypot: form.honey,
       });
-      toast.success(mode === "quote" ? "Thanks — we’ve received your enquiry. Olive Beacon will be in touch shortly." : "Thanks — your message has been received. Olive Beacon will be in touch shortly.");
+      setLocation("/thank-you");
       setForm(initialForm);
       setSelectedServices([]);
       setSelectedFeatures([]);
@@ -138,10 +152,10 @@ export function QuoteForm() {
           <p className="eyebrow"><span /> START A CONVERSATION</p>
           <h2 id="quote-title">Built around what <em>matters.</em></h2>
           <p>Tell us where you want to create a stronger customer connection. We’ll review your requirements and come back with the right next step.</p>
-          <div className="quote-points">
+            <div className="quote-points">
             <div><Check size={16} /> No generic packages or fixed pricing</div>
             <div><Check size={16} /> Clear, considered recommendations</div>
-            <div><Check size={16} /> Your details stay within Olive Beacon</div>
+            <div><Check size={16} /> Your details are used to handle your enquiry and related business administration</div>
           </div>
         </div>
         <div className="quote-card">
