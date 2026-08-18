@@ -1,0 +1,14 @@
+# Olive Beacon: Next-Stage Image Brief
+
+The current website now uses separate art-directed Review Stand and Review Sticker visuals. The following assets would raise the product story further by showing real materials, correct placement, and human interaction. Each image must remain free of fabricated customer reviews, ratings, results, names, or third-party platform branding.
+
+| Priority | Asset | Purpose and composition | Required details | Avoid |
+|---|---|---|---|---|
+| 1 | Review Stand in use | A customer or staff hand holding a phone close to the freestanding counter-top Review Stand at a premium reception, payment, or service-handover moment. | Black/smoked acrylic stand, olive-and-gold Olive Beacon mark, clear countertop contact shadow, phone and object in the same physical perspective. | Sticker-only layouts, fake review screens, star ratings, exaggerated light effects. |
+| 2 | Review Sticker in use | A phone near the flat Review Sticker attached to a café window, glass door, counter front, or reception surface. | Sticker must be visibly adhesive and surface-applied; natural glass or material reflections; customer movement implied without crowding the frame. | Freestanding stand, QR-only signboard, pasted-on shadowless object. |
+| 3 | Review Stand material macro | A close hero crop showing acrylic edge, engraved/printed NFC treatment, QR detail, and warm reflection on the stand. | Clean 4:5 or 3:4 product composition; dark premium background; no readable fake copy required. | Floating rendered product, generic business cards, third-party logos. |
+| 4 | Review Sticker material macro | A close crop showing the sticker sitting naturally on smoked glass or painted counter material. | Clean adhesive edge and realistic surface reflection; controlled olive/gold light. | Acrylic counter stand, unreadable decorative interface text. |
+| 5 | Hospitality lifestyle scene | A luxurious hotel or restaurant reception setting with enough clean negative space for a wide website section. | Near-black/navy palette, warm practical lighting, architecture and material depth; no identifiable guests necessary. | Busy crowd, obvious stock-photo posing, fake awards or claims. |
+| 6 | Service-handover lifestyle scene | A premium barber, vehicle-detailing, or specialist-service handover with the customer journey implied. | Clear space for an Olive Beacon object to be composited or naturally placed; detail-oriented material photography. | Artificial before/after claims, fabricated results, visible brands without permission. |
+
+All supplied images should be at least 2400px on the long edge where possible. Landscape 16:9 works best for hero compositions; 4:5 works best for focused editorial product cutaways. Supply unwatermarked originals and label files with the asset name above.

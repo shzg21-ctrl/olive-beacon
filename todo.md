@@ -28,12 +28,17 @@
 - [x] Run and document a rendered browser-level reduced-motion pass on refined routes, confirming static presentation with motion preference enabled.
 - [x] Run and document rendered reduced-motion checks on the industry, Concept Lab, and quote routes before final delivery.
 - [x] Save a refined project checkpoint, update the existing private GitHub repository, and deliver the finished expansion.
-- [ ] Audit and replace any pasted or mismatched asset usage with intentional, product-accurate visual compositions.
-- [ ] Rebuild the header identity with an integrated animated Olive Beacon logo mark beside the wordmark.
-- [ ] Upgrade the product and NFC/QR experience with richer three-dimensional motion, scroll choreography, and correct Review Stand versus Review Sticker stories.
-- [ ] Redesign the Concept Lab as ten truly distinct industry website directions rather than a shared layout with recoloured styling.
-- [ ] Improve the industry detail content with clearer tailored offers, placement recommendations, and digital opportunities.
-- [ ] Produce a precise requested-image brief covering all product, lifestyle, and identity assets needed to reach the desired visual standard.
+- [x] Audit and replace any pasted or mismatched asset usage with intentional, product-accurate visual compositions.
+- [x] Rebuild the header identity with an integrated animated Olive Beacon logo mark beside the wordmark.
+- [x] Upgrade the product and NFC/QR experience with richer three-dimensional motion, scroll choreography, and correct Review Stand versus Review Sticker stories.
+- [x] Redesign the Concept Lab as ten truly distinct industry website directions rather than a shared layout with recoloured styling.
+- [x] Improve the industry detail content with clearer tailored offers, placement recommendations, and digital opportunities.
+- [x] Produce a precise requested-image brief covering all product, lifestyle, and identity assets needed to reach the desired visual standard.
+- [x] Audit and refine remaining non-product image placements so representative website, portfolio, and conversion visuals use integrated art direction rather than dropped-in image treatment.
+- [x] Add and verify explicit scroll choreography for the physical-to-digital NFC/QR story across the home and product routes.
+- [x] Verify and document that the original Concept Lab links to ten genuinely distinct Website Examples directions, or revise its framing to accurately point to the separate curated portfolio.
+- [x] Audit and refine representative Website Examples portfolio and quote conversion visuals, recording route-specific integrated-art-direction QA evidence.
+- [x] Add and verify scroll-linked NFC/QR choreography on the Review Stand and Review Sticker product routes.
 - [ ] Complete responsive visual QA, save a new checkpoint, synchronize the private GitHub repository, and deliver the art-directed redesign.
 - [x] Classify the complete uploaded website-concept image set by business category, concept family, page type, format, quality, and duplication risk.
 - [x] Curate the strongest concept families without deleting the user’s uploaded source assets or modifying unrelated site areas.
