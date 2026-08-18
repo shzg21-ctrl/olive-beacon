@@ -23,6 +23,9 @@ const FaqPage = lazy(async () => ({ default: (await import("./pages/SitePages"))
 const QuotePage = lazy(async () => ({ default: (await import("./pages/SitePages")).QuotePage }));
 const ThankYouPage = lazy(async () => ({ default: (await import("./pages/SitePages")).ThankYouPage }));
 const ClientAreaPage = lazy(async () => ({ default: (await import("./pages/SitePages")).ClientAreaPage }));
+const PortfolioLanding = lazy(async () => ({ default: (await import("./components/PortfolioExplorer")).PortfolioLanding }));
+const PortfolioCategoryPage = lazy(async () => ({ default: (await import("./components/PortfolioExplorer")).PortfolioCategoryPage }));
+const PortfolioConceptPage = lazy(async () => ({ default: (await import("./components/PortfolioExplorer")).PortfolioConceptPage }));
 
 function Router() {
   const publicPage = (page: React.ReactNode) => () => <SiteLayout><Suspense fallback={<div className="route-loading">Connecting the signal…</div>}>{page}</Suspense></SiteLayout>;
@@ -32,6 +35,9 @@ function Router() {
     <Route path="/products/review-stand" component={publicPage(<ProductDetailPage kind="stand" />)} />
     <Route path="/products/review-sticker" component={publicPage(<ProductDetailPage kind="sticker" />)} />
     <Route path="/websites" component={publicPage(<WebsitesPage />)} />
+    <Route path="/website-examples" component={publicPage(<PortfolioLanding />)} />
+    <Route path="/website-examples/:category/:concept" component={publicPage(<PortfolioConceptPage />)} />
+    <Route path="/website-examples/:category" component={publicPage(<PortfolioCategoryPage />)} />
     <Route path="/solutions" component={publicPage(<SolutionsPage />)} />
     <Route path="/how-it-works" component={publicPage(<HowItWorksPage />)} />
     <Route path="/industries" component={publicPage(<IndustriesPage />)} />

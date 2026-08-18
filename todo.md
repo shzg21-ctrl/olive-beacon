@@ -27,4 +27,23 @@
 - [x] Verify and record the refined lead-form error handling and reduced-motion preference behaviour in the browser.
 - [x] Run and document a rendered browser-level reduced-motion pass on refined routes, confirming static presentation with motion preference enabled.
 - [x] Run and document rendered reduced-motion checks on the industry, Concept Lab, and quote routes before final delivery.
-- [ ] Save a refined project checkpoint, update the existing private GitHub repository, and deliver the finished expansion.
+- [x] Save a refined project checkpoint, update the existing private GitHub repository, and deliver the finished expansion.
+- [ ] Audit and replace any pasted or mismatched asset usage with intentional, product-accurate visual compositions.
+- [ ] Rebuild the header identity with an integrated animated Olive Beacon logo mark beside the wordmark.
+- [ ] Upgrade the product and NFC/QR experience with richer three-dimensional motion, scroll choreography, and correct Review Stand versus Review Sticker stories.
+- [ ] Redesign the Concept Lab as ten truly distinct industry website directions rather than a shared layout with recoloured styling.
+- [ ] Improve the industry detail content with clearer tailored offers, placement recommendations, and digital opportunities.
+- [ ] Produce a precise requested-image brief covering all product, lifestyle, and identity assets needed to reach the desired visual standard.
+- [ ] Complete responsive visual QA, save a new checkpoint, synchronize the private GitHub repository, and deliver the art-directed redesign.
+- [x] Classify the complete uploaded website-concept image set by business category, concept family, page type, format, quality, and duplication risk.
+- [x] Curate the strongest concept families without deleting the user’s uploaded source assets or modifying unrelated site areas.
+- [x] Build a dedicated Website Examples portfolio landing, category browsing, concept gallery, and individual multi-page preview journey.
+- [x] Present desktop and mobile references in appropriate premium browser or phone frames without stretching or damaging the uploaded assets.
+- [x] Complete cohesive matching pages for strong but incomplete website concept families while clearly marking all work as concept or demonstration design.
+- [x] Complete the asset manifest for every uploaded image, including concept family, page types, format, quality tier, and duplicate risk.
+- [x] Identify and document mobile-only references, applying a phone-frame presentation or excluding unsuitable sources from public display.
+- [x] Restrict public concepts to coherent source families with three matching pages and explicitly document that no incomplete family is shown as complete.
+- [x] Map every displayed portfolio concept to an explicit source-board family with real matching page crop positions and remove any unsupported concepts.
+- [x] Verify representative concepts switch between real matching page crops from their mapped source family and record the result.
+- [x] Capture and record DOM-level image object-position changes for at least three mapped portfolio concepts before final delivery.
+- [ ] Verify portfolio curation, disclosures, routing, accessibility, mobile presentation, checkpoint, GitHub synchronization, and delivery.

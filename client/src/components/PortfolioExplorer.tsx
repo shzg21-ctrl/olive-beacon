@@ -1,0 +1,40 @@
+import { useState } from "react";
+import "@/portfolio.css";
+import { ArrowLeft, ArrowRight, ChevronRight, Layers3, Sparkles } from "lucide-react";
+import { Link, useRoute } from "wouter";
+import { motion, useReducedMotion } from "framer-motion";
+import { PageEnter, Reveal, Stagger, StaggerItem } from "@/components/Motion";
+import { PageMeta } from "@/components/SiteLayout";
+import { getBoardSrc, getPortfolioCategory, getPortfolioConcept, portfolioCategories, type PortfolioConcept } from "@/lib/portfolioData";
+
+function Eyebrow({ children }: { children: React.ReactNode }) { return <p className="eyebrow"><span /> {children}</p>; }
+
+function BrowserFrame({ concept, focus, full = false }: { concept: PortfolioConcept; focus?: string; full?: boolean }) {
+  return <div className={full ? "portfolio-browser full" : "portfolio-browser"}><div className="portfolio-browser-chrome"><span><i /><i /><i /></span><b>CONCEPT / DEMONSTRATION DESIGN</b><em>VISUAL REFERENCE</em></div><img src={getBoardSrc(concept.board)} alt={`${concept.title} visual website concept board with matching example pages`} loading={full ? "eager" : "lazy"} style={{ objectPosition: focus ?? concept.focus }} /></div>;
+}
+
+function ConceptCard({ categoryId, concept, index }: { categoryId: string; concept: PortfolioConcept; index: number }) {
+  const reduced = useReducedMotion();
+  return <motion.article className="portfolio-card" initial={reduced ? false : { opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .1 }} transition={{ delay: Math.min(index * .045, .25), duration: .48, ease: [0.23, 1, 0.32, 1] }} whileHover={reduced ? undefined : { y: -6 }}><Link href={`/website-examples/${categoryId}/${concept.id}`} aria-label={`Open ${concept.title} website concept`}><BrowserFrame concept={concept} /><div className="portfolio-card-info"><div><p>{concept.style}</p><h3>{concept.title}</h3><span>{concept.pages.map((page) => page.label).join(" · ")}</span></div><ChevronRight size={18} /></div></Link></motion.article>;
+}
+
+export function PortfolioLanding() {
+  return <PageEnter><PageMeta title="Website examples" description="Explore curated Olive Beacon website concepts and design directions by business category." /><section className="portfolio-hero section"><Reveal><Eyebrow>WEBSITE EXAMPLES</Eyebrow><h1>Choose a direction.<br /><em>Make it yours.</em></h1><p>Explore curated website concepts for different types of small business. Start with an industry, notice what you are drawn to, then use it as a reference point for something built around your own business.</p></Reveal><div className="portfolio-hero-rule"><span>01</span><p>These are concept and demonstration designs. They are not live customer sites or case studies.</p></div></section><section className="section portfolio-intro"><div><Eyebrow>EXPLORE BY INDUSTRY</Eyebrow><h2>Different businesses need different digital <em>architectures.</em></h2></div><p>Every collection is organised around a real business type, with different layouts, visual languages, and conversion routes—not just a new colour applied to the same template.</p></section><section className="section portfolio-category-grid"><Stagger>{portfolioCategories.map((category, index) => <StaggerItem key={category.id}><Link href={`/website-examples/${category.id}`} className="portfolio-category-card"><div><span>{String(index + 1).padStart(2, "0")}</span><Layers3 size={19} /></div><h3>{category.label}</h3><p>{category.summary}</p><footer><em>{category.available} directions</em><ArrowRight size={16} /></footer></Link></StaggerItem>)}</Stagger></section><section className="section portfolio-personalisation"><div className="portfolio-personalisation-mark"><Sparkles size={26} /></div><div><Eyebrow>NOT A PICK-AND-PAY CATALOGUE</Eyebrow><h2>See something you like? Mix ideas, or let’s create something <em>new.</em></h2><p>Use a layout from one concept, a feeling from another, and your own identity, audience, and practical requirements to create the version that is right for your business.</p></div><Link href="/quote" className="button button-primary">Start your website <ArrowRight size={16} /></Link></section></PageEnter>;
+}
+
+export function PortfolioCategoryPage() {
+  const [, params] = useRoute("/website-examples/:category");
+  const category = getPortfolioCategory(params?.category);
+  if (!category) return <PortfolioLanding />;
+  return <PageEnter><PageMeta title={`${category.label} website examples`} description={`Explore Olive Beacon ${category.label.toLowerCase()} website design concepts and example styles.`} /><section className="portfolio-category-hero section"><Link href="/website-examples" className="portfolio-back"><ArrowLeft size={15} /> All website examples</Link><Reveal><Eyebrow>{category.label.toUpperCase()} WEBSITE DIRECTIONS</Eyebrow><h1>{category.label} sites with a clearer <em>point of view.</em></h1><p>{category.summary} Browse the directions below, open the ones that feel right, and see each design family across its matching core pages.</p><div className="portfolio-style-cue"><span>Style range</span>{category.styleCue}</div></Reveal></section><section className="section portfolio-gallery-section"><div className="portfolio-gallery-head"><p>DESIGN DIRECTIONS</p><span>{category.concepts.length} curated concepts</span></div><div className="portfolio-grid">{category.concepts.map((concept, index) => <ConceptCard key={concept.id} categoryId={category.id} concept={concept} index={index} />)}</div></section><section className="section portfolio-inline-cta"><p>Found a direction you like?</p><h2>Let’s create your <em>version.</em></h2><Link href="/quote" className="button button-outline">Discuss your website <ArrowRight size={16} /></Link></section></PageEnter>;
+}
+
+export function PortfolioConceptPage() {
+  const [, params] = useRoute("/website-examples/:category/:concept");
+  const category = getPortfolioCategory(params?.category);
+  const concept = getPortfolioConcept(params?.category, params?.concept);
+  const [page, setPage] = useState(0);
+  if (!category || !concept) return <PortfolioLanding />;
+  const activePage = concept.pages[page];
+  return <PageEnter><PageMeta title={`${concept.title} — ${category.label} concept`} description={`${concept.title} is an Olive Beacon ${category.label.toLowerCase()} website concept and visual design direction.`} /><section className="portfolio-detail-hero section"><Link href={`/website-examples/${category.id}`} className="portfolio-back"><ArrowLeft size={15} /> {category.label} directions</Link><Reveal><Eyebrow>{category.label.toUpperCase()} / CONCEPT DESIGN</Eyebrow><h1>{concept.title}<br /><em>{concept.style} direction.</em></h1><p>{concept.description}</p></Reveal></section><section className="section portfolio-detail-stage"><div className="portfolio-disclosure"><span>CONCEPT / DEMONSTRATION DESIGN</span><p>This visual direction is not a client website, live demo, or case study.</p></div><div className="portfolio-page-tabs" role="tablist" aria-label="Concept pages">{concept.pages.map((entry, index) => <button key={entry.label} className={page === index ? "active" : ""} onClick={() => setPage(index)} role="tab" aria-selected={page === index}><span>0{index + 1}</span>{entry.label}</button>)}</div><motion.div key={activePage.label} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .28 }}><BrowserFrame concept={concept} focus={activePage.focus} full /></motion.div><div className="portfolio-page-caption"><span>PAGE {String(page + 1).padStart(2, "0")}</span><p>{activePage.description}</p></div></section><section className="section portfolio-detail-next"><div><Eyebrow>MAKE THE DIRECTION YOUR OWN</Eyebrow><h2>Keep the feeling. Build the right <em>business.</em></h2><p>A real Olive Beacon website would be shaped around your branding, offer, customers, content, and the actions you want people to take.</p></div><Link href="/quote" className="button button-primary">Start a website conversation <ArrowRight size={16} /></Link></section></PageEnter>;
+}

@@ -1,0 +1,144 @@
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-01.webp (size: 46122 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-01_a3202eff.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-02.webp (size: 210016 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-02_1d427f5d.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-03.webp (size: 161450 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-03_2484d092.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-04.webp (size: 146626 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-04_4a699b95.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-05.webp (size: 143986 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-05_67e44d91.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-06.webp (size: 153718 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-06_171e3474.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-07.webp (size: 104574 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-07_5cec64c8.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-08.webp (size: 154570 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-08_5502921a.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-09.webp (size: 141870 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-09_ea15f87a.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-10.webp (size: 221798 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-10_3d076acf.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-11.webp (size: 193832 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-11_66ded91d.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-12.webp (size: 158724 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-12_f9b97e2f.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-13.webp (size: 166624 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-13_7a2f36f3.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-14.webp (size: 165698 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-14_e03bedea.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-15.webp (size: 159454 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-15_a9ac6f4f.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-16.webp (size: 189894 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-16_2a4fc38d.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-17.webp (size: 145530 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-17_02a5ed17.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-18.webp (size: 162892 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-18_8d50bcc2.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-19.webp (size: 163988 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-19_c1287467.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-20.webp (size: 174294 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-20_52122220.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-21.webp (size: 160984 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-21_ac40c819.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-22.webp (size: 218292 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-22_b99b5b94.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-23.webp (size: 241060 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-23_990ddfc2.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-24.webp (size: 166442 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-24_023e5145.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-25.webp (size: 175520 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-25_9307215d.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-26.webp (size: 159024 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-26_4f831394.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-27.webp (size: 196174 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-27_61753c7f.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-28.webp (size: 81212 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-28_7706e5f2.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-29.webp (size: 133112 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-29_f7d58ef1.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-30.webp (size: 173188 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-30_a35624e1.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-31.webp (size: 166862 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-31_51668e00.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-32.webp (size: 148762 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-32_0c1d5a72.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-33.webp (size: 141082 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-33_09be2b7d.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-34.webp (size: 172238 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-34_5cc7585a.webp
+Uploading file (webdev private): /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-35.webp (size: 182072 bytes)
+File uploaded successfully!
+Storage Path: /manus-storage/concept-board-35_d84ff5bc.webp
+
+========== Upload Summary ==========
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-01.webp -> /manus-storage/concept-board-01_a3202eff.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-02.webp -> /manus-storage/concept-board-02_1d427f5d.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-03.webp -> /manus-storage/concept-board-03_2484d092.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-04.webp -> /manus-storage/concept-board-04_4a699b95.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-05.webp -> /manus-storage/concept-board-05_67e44d91.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-06.webp -> /manus-storage/concept-board-06_171e3474.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-07.webp -> /manus-storage/concept-board-07_5cec64c8.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-08.webp -> /manus-storage/concept-board-08_5502921a.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-09.webp -> /manus-storage/concept-board-09_ea15f87a.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-10.webp -> /manus-storage/concept-board-10_3d076acf.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-11.webp -> /manus-storage/concept-board-11_66ded91d.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-12.webp -> /manus-storage/concept-board-12_f9b97e2f.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-13.webp -> /manus-storage/concept-board-13_7a2f36f3.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-14.webp -> /manus-storage/concept-board-14_e03bedea.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-15.webp -> /manus-storage/concept-board-15_a9ac6f4f.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-16.webp -> /manus-storage/concept-board-16_2a4fc38d.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-17.webp -> /manus-storage/concept-board-17_02a5ed17.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-18.webp -> /manus-storage/concept-board-18_8d50bcc2.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-19.webp -> /manus-storage/concept-board-19_c1287467.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-20.webp -> /manus-storage/concept-board-20_52122220.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-21.webp -> /manus-storage/concept-board-21_ac40c819.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-22.webp -> /manus-storage/concept-board-22_b99b5b94.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-23.webp -> /manus-storage/concept-board-23_990ddfc2.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-24.webp -> /manus-storage/concept-board-24_023e5145.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-25.webp -> /manus-storage/concept-board-25_9307215d.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-26.webp -> /manus-storage/concept-board-26_4f831394.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-27.webp -> /manus-storage/concept-board-27_61753c7f.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-28.webp -> /manus-storage/concept-board-28_7706e5f2.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-29.webp -> /manus-storage/concept-board-29_f7d58ef1.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-30.webp -> /manus-storage/concept-board-30_a35624e1.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-31.webp -> /manus-storage/concept-board-31_51668e00.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-32.webp -> /manus-storage/concept-board-32_0c1d5a72.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-33.webp -> /manus-storage/concept-board-33_09be2b7d.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-34.webp -> /manus-storage/concept-board-34_5cc7585a.webp
+[SUCCESS] /home/ubuntu/webdev-static-assets/olive-beacon-portfolio/concept-board-35.webp -> /manus-storage/concept-board-35_d84ff5bc.webp
+=====================================
+Total: 35, Success: 35, Failed: 0
